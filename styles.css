@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+* {
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #EFF1ED; /* #30343F #94849B #EFF1ED */
+  color: #black;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+nav {
+  background-color: #30343F;
+  color: #000;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+  margin-left: 20px;
+}
+
+nav a::after {
+  content: '';
+  border-bottom: 3px solid #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(5px);
+  transition: transform 0.3s ease;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+}
+
+nav a:hover::after {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+header {
+  background-image: url(https://images.unsplash.com/photo-1559336197-ded8aaa244bc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80);
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  height: 100vh;
+}
+
+header::after {
+  content: "";
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.7;
+}
+
+header * {
+  position: relative;
+  z-index: 1;
+}
+
+header h1 {
+  font-size: 60px;
+  margin-bottom: 5px;
+  margin-top: 0;
+}
+
+header p {
+  font-size: 30px;
+  margin: 0;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  max-width: 900px;
+  margin: 20px auto 0;
+}
+
+.project-tile {
+  color: #000;
+  text-decoration: none;
+  max-width: 250px;
+  margin: 10px;
+  transition: transform 0.3s ease;
+}
+
+.project-tile:hover {
+  transform: scale(1.05);
+}
+
+.project-tile img {
+  max-width: 100%;
+}
+
+.project-tile p {
+  margin: 0;
+}
+
+section {
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+section p {
+  color: white;
+  margin-bottom: 5px;
+}
+
+.bg-mountbatten {
+  background-color: #94849B;
+}
+
+.social-ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-ul a {
+  color: #fff;
+  font-size: 30px;
+  margin: 5px 10px;
+}
+
+footer {
+  background-color: #30343F;
+  color: white;
+  text-align: right;
+  padding: 5px;
+}
+
+footer .fa-heart {
+  color: white;
+}
+
+@media (max-width: 440px) {
+  section {
+    padding: 20px;
+  }
+  
+}
+Resources
