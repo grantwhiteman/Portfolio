@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 * {
   box-sizing: border-box;
 }
 
 body{
   background-color: #EFF1ED; /* #30343F #94849B #EFF1ED */
-  color: #black;
   margin: 0;
   font-family: 'Lato', sans-serif;
 }
@@ -13,9 +12,13 @@ body{
 nav {
   background-color: #30343F;
   color: #000;
+  position: fixed;
+  top: 0;
   display: flex;
   justify-content: flex-end;
   padding: 10px;
+  width: 100%;
+  z-index: 2;
 }
 
 nav a {
@@ -54,6 +57,7 @@ header {
   flex-direction: column;
   position: relative;
   height: 100vh;
+  margin-top: 20px;
 }
 
 header::after {
@@ -83,6 +87,11 @@ header p {
   margin: 0;
 }
 
+h2 {
+  font-size: 30px;
+  margin-bottom: 0px;
+}
+
 .projects-container {
   display: flex;
   flex-wrap: wrap;
@@ -93,7 +102,6 @@ header p {
 }
 
 .project-tile {
-  color: #000;
   text-decoration: none;
   max-width: 250px;
   margin: 10px;
@@ -109,22 +117,28 @@ header p {
 }
 
 .project-tile p {
+  color: black;
+  font-size: 19px;
   margin: 0;
 }
 
 section {
-  padding: 20px;
+  padding: 30px;
   text-align: center;
-  color: white;
 }
 
 section p {
-  color: white;
   margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+.bg-whitish {
+  color: black;
 }
 
 .bg-mountbatten {
   background-color: #94849B;
+  color: white;
 }
 
 .social-ul {
@@ -137,7 +151,7 @@ section p {
 }
 
 .social-ul a {
-  color: #fff;
+  color: white;
   font-size: 30px;
   margin: 5px 10px;
 }
@@ -157,6 +171,4 @@ footer .fa-heart {
   section {
     padding: 20px;
   }
-  
 }
-Resources
