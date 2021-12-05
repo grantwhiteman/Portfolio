@@ -93,7 +93,7 @@ h2 {
 }
 
 ul {
-  text-align: left;
+	text-align: left;
 }
 
 .projects-container {
@@ -118,7 +118,6 @@ ul {
 	margin: 10px;
 	transition: transform 0.3s ease;
 }
-
 
 .project-tile:hover {
 	transform: scale(1.05);
