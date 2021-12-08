@@ -10,6 +10,10 @@
 	--outline-width: 0px;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 #cards {
 	padding-bottom: calc(
 		var(--numcards) * var(--card-top-offset)
@@ -35,6 +39,9 @@
 	--index: 4;
 }
 
+#card_5 {
+	--index: 5;
+}
 .card {
 	position: sticky;
 	top: 40px;
@@ -106,6 +113,7 @@ body {
 	background: white;
 	color: rgb(0, 0, 0);
 	text-align: center;
+
 	font-size: calc(1em + 0.5vw);
 }
 
@@ -179,17 +187,22 @@ main {
 }
 h1 {
 	font-weight: 300;
-	font-size: 3.5em;
+	font-size: 6vw;
 }
+/* @media screen and (min-width: 1600px) {
+	body {
+		font-size: 6vw;
+	}
+} */
 
 h2 {
 	font-weight: 300;
-	font-size: 5vw;
+	font-size: 3vw;
 }
 
 h3 {
 	font-weight: 300;
-	font-size: 3vw;
+	font-size: 2.5vw;
 }
 
 p {
@@ -237,6 +250,7 @@ nav {
 nav a {
 	color: white;
 	text-decoration: none;
+	font-size: 2vw;
 	position: relative;
 	margin-left: 20px;
 }
@@ -272,7 +286,7 @@ header {
 	position: relative;
 	height: 100vh;
 	width: 100%;
-	margin-top: 0px;
+	margin-top: 20px;
 	border-bottom: #000;
 }
 
@@ -292,11 +306,11 @@ header * {
 	z-index: 1;
 }
 
-header h1 {
-	font-size: 7vw;
+/* header h1 {
+	font-size: 10vw;
 	margin-bottom: 5px;
 	margin-top: 0;
-}
+} */
 
 header p {
 	font-size: 30px;
@@ -346,7 +360,7 @@ ul {
 }
 
 .project-tile img {
-	max-width: 100%;
+	max-width: 60%;
 }
 
 .project-tile p {
@@ -385,7 +399,7 @@ section p {
 
 .social-ul a {
 	color: white;
-	font-size: 30px;
+	font-size: 2vw;
 	margin: 5px 10px;
 }
 
@@ -398,6 +412,10 @@ footer {
 
 footer .fa-heart {
 	color: white;
+}
+
+figcaption {
+	font-size: 3vw;
 }
 
 @media (max-width: 440px) {

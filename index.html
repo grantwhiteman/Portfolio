@@ -6,17 +6,18 @@
         <script src="https://kit.fontawesome.com/d826522152.js" crossorigin="anonymous"></script>
     </head>
     <body>
-            <nav id="navbar">
+        <nav id="navbar">
             <a href="#welcome-section">About</a>
             <a href="#projects">Projects</a>
             <a href="#cv">CV</a>
-            <a href="#social">Contact me</a>
+            <a href="#social">Contact</a>
         </nav>
 
         <header id="welcome-section">
             <h1>Grant Whiteman</h1>
-            <p>Looking for Junior Software Engineering roles</p>
-            <ul style="font-size:22px">
+            <h2>Junior Software Engineer</h2>
+            <h3>FullStack JavaScript, Python, C</h3>    
+            <ul style="font-size: 2vw">
                 <li>Chemical Engineering Graduate</li>
                 <li>12 Week Intensive Software Engineering Academy</li>
                 <li>Experience with Test and Behaviour Driven Development</li>
@@ -25,10 +26,8 @@
                 <li>Testing frameworks: Cypress and Jest with fully automated integrated testing, in a continous deployment environment</li>
                 <li>Worked with Jira and gained lots of experience with Git CLI working with Github</li>
                 <li>All work completed on a Linux VM</li>
-                <br><br><br><br>
-                <br>
-                <br>
             </ul>
+            <br><br><br>
         </header>
 
         <section>
@@ -53,7 +52,7 @@
                             </div>
                             <figure>
                                 <a href="https://main.d37tv71uonakk1.amplifyapp.com/" target="_blank"><img src="public/square/df.jpg"
-                                    alt="Atlas preview" ></a>
+                                    alt="Atlas preview"></a>
                             </figure>
                         </div>
                     </li>
@@ -84,15 +83,31 @@
                                         <li>Solo project built in one 9-5 day, after 2 weeks of learning React</li>
                                         <li>Makes requests to pokemon API</li>
                                     </ul>
-                                    <p><a href="https://github.com/grantwhiteman/pokemon" target="_blank" class="btn btn--accent">Source code</a>
-                                    </p>
+                                    <p><a href="https://github.com/grantwhiteman/pokemon" target="_blank" class="btn btn--accent">Source code</a></p>
                             </div>
                         <figure>
                             <a href="https://grantwhiteman.github.io/pokemon/" target="_blank"><img src="public/square/pokemon.jpg" alt="pokemon"></a>
                         </figure>
                         </div>
                     </li>
-                    <li class="card" id="card_3">
+                    <li class="card" id="card_4">
+                        <div class="card__content">
+                            <div>
+                                <h3>Battle Game</h3>
+                                <p><b>Node, Express, Postgres</b></p>
+                                <ul>
+                                    <li>Pair programming project as part of learning storing state in a db</li>
+                                    <li>Simple game where each player inflicts random amount of damage per hit</li>
+                                    <li>First person to reach 0hp loses</li>
+                                </ul>
+                                <p><a href="https://github.com/grantwhiteman/battle" target="_blank" class="btn btn--accent">Source code</a></p>
+                            </div>
+                            <figure>
+                                <a href="public/square/battle.png" target="_blank"><img src="public/square/battle.png" alt="battle"></a>
+                            </figure>
+                        </div>
+                    </li>
+                    <li class="card" id="card_5">
                         <div class="card__content">
                             <div>
                                 <h3>foldrCreatr</h3>
@@ -108,8 +123,7 @@
                                 </p>
                             </div>
                             <figure>
-                                <a href="foldrCreatr.html" target="_blank"><img src="public/square/FoldrCreatr.png"
-                                        alt="foldrCreatr"></a>
+                                <a href="foldrCreatr.html" target="_blank"><img src="public/square/FoldrCreatr.png" alt="foldrCreatr"></a>
                             </figure>
                         </div>
                     </li>
@@ -132,7 +146,7 @@
             <h2 id="cv">My CV</h2>
             <embed src="public/20210519_Grant_Whiteman.pdf" width="80%" height="600" type="application/pdf" class="cv">
             <section id="social" class="bg-mountbatten">
-                <h2>Connect with me:</h2>
+                <h2>Connect with me</h2>
                 <ul class="social-ul">
                     <li><a href="mailto: grantwhiteman95@gmail.com"><i class="fas fa-envelope-open-text"></i></a></li>
                     <li><a id="profile-link" href="https://github.com/grantwhiteman" target="_blank"><i class="fab fa-github"></i></a></li>
@@ -141,71 +155,6 @@
                 </ul>
             </section>
             <!-- <input type="checkbox" id="debug" /> -->
-        <footer>Made with <i class="fas fa-heart"></i> by Grant Whiteman</footer>    
+        <footer style="font-size:2vw">Made with <i class="fas fa-heart"></i> by Grant Whiteman</footer>    
     </body>
 </html>
-    <!-- <div class="projects-container">
-        <a href="https://main.d37tv71uonakk1.amplifyapp.com/" target="_blank" class="project-tile">
-            <img src="public/df.png" alt="Digital Futures">
-            <h3>Full stack application (Website link)</h3>
-        </a>
-        <ul class="project-tile-text" style="font-size:18px">
-            <li>Frameworks: Node, Express, React, PostgreSQL</li>
-            <li>Final project built over 3 weeks</li>
-            <li>Built a RESTful API</li>
-            <li>Built a React frontend which makes requests to the backend</li>
-            <li>Worked in teams on different sections of the website, my team of 4 was responsible for 'File Upload' and 'Upload History'</li>
-            <li>All extensively tested with feature/behaviour tests and stubbed unit tests</li>
-            Source code: <a href="https://github.com/digital-futures-academy/atlas-api" target="_blank">API</a> / <a href="https://github.com/digital-futures-academy/atlas-api" target="_blank">Frontend</a>
-        </ul>
-        <a href="https://grantwhiteman.github.io/pokemon/" target="_blank" class="project-tile">
-            
-            <img src="public/square/pika.png" alt="pokemon">
-            <h3>Pokemon React App (Website link)</h3>
-        </a>
-        <ul class="project-tile-text" style="font-size:18px">
-            <li>Framekworks: React</li>
-            <li>Solo project built in one 9-5 day, after 2 weeks of learning React</li>
-            <li>Makes requests to pokemon API</li>
-            Source code: <a href="https://github.com/grantwhiteman/pokemon" target="_blank">Github</a>
-        </ul> -->
-        <!-- <a href="https://grantwhiteman.github.io/chitter-challenge/" target="_blank" class="project-tile"> -->
-        <!-- <a href="https://youtu.be/HQm2qq8bypk" target="_blank" class="project-tile">
-            <img src="public/bm.png" alt="bookmark-manager">
-            <h3>Bookmark manager (YouTube link)</h3>
-        </a>
-        <ul class="project-tile-text" style="font-size:18px">
-            <li>Frameworks: Node, Express, PostgreSQL</li>
-            <li>Solo project built in one 9-5 day, after 2 weeks of learning Express</li>
-            <li>Stores user details and bookmarks in relational database</li>
-            <li>Able to filter by framework to find relevant projects</li>
-            <li>Uses express routers and layouts to manage requests on backend</li>
-            <li>Created RESTful API</li>
-            Source code: <a href="https://github.com/grantwhiteman/bookmark-manager" target="_blank">Github</a>
-        </ul>
-        <a href="foldrCreatr.html" target="_blank" class="project-tile">
-            <img src="public/fc/FoldrCreatr.png" alt="foldrcreatr">
-            <h3>foldrCreatr (Local link)</h3>
-        </a>
-        <ul class="project-tile-text" style="font-size:18px">
-            <li>Frameworks: Python, TKinter, Pillow, OS</li>
-            <li>Solo project built for work to create new client folders</li>
-            <li>Populates data folder based on requirements</li>
-            <li>Made executable application available to whole company</li>
-            Source code: <a href="https://github.com/grantwhiteman/foldrCreatr" target="_blank">Github</a>
-        </ul> -->
-        <!-- <a href="chitter.html" target="_blank" class="project-tile">
-            <img src="public/chitterpic.png" alt="chitter">
-            <h3>Twitter clone</h3>
-        </a> -->
-        <!-- <ul class="project-tile-text" style="font-size:18px">
-            <li>Frameworks: Node, Express, PostgreSQL</li>
-            <li>Solo project at end of Express unit</li>
-            <li>Stores user details and tweets in relational database</li>
-            <li>Uses express routers and layouts to manage requests on backend</li>
-            <li>Created RESTful API</li>
-            Source code: <a href="https://github.com/grantwhiteman/Chitter" target="_blank">Github</a>
-        </ul> -->
-
-    <!-- </div>  
-</section> -->
