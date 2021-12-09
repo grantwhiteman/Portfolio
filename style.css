@@ -159,6 +159,20 @@ main {
 	outline: var(--outline-width) solid lime;
 }
 
+.opening {
+	margin-bottom: 5px;
+	margin-top: 10px;
+	font-weight: 300;
+	font-size: 2vw;
+	margin: 0 10vw 0 10vw;
+	/* box-shadow: 0 0.2em 1em rgba(0, 0, 0, 0.1), 0 1em 2em rgba(0, 0, 0, 0.1);
+	background: rgb(255, 255, 255);
+	color: rgb(10, 5, 7);
+	border-radius: 1em;
+	overflow: hidden; */
+}
+
+
 .card__content > div {
 	grid-area: text;
 	width: 80%;
@@ -374,10 +388,6 @@ section {
 	text-align: center;
 }
 
-section p {
-	margin-bottom: 5px;
-	margin-top: 10px;
-}
 
 .bg-whitish {
 	color: black;
