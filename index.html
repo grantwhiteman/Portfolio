@@ -1,8 +1,24 @@
 <!DOCTYPE html> 
 <html lang="en">
     <head>
+        
         <title>Grant Whiteman</title>
         <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(() => {
+                $("#btn1").click(() => {
+                    $("#interest-1").fadeIn(1500);
+                    $("#interest-2").fadeIn(3000);
+                    $("#btn2").fadeIn(4500);
+                    $("#btn1").fadeOut(1500);
+                }); 
+                $("#btn2").click(() => {
+                    $("#interest-3").fadeIn(1500);
+                    $("#btn2").fadeOut(1500);
+                });
+            });
+        </script>
         <script src="https://kit.fontawesome.com/d826522152.js" crossorigin="anonymous"></script>
     </head>
     <body>
@@ -34,6 +50,22 @@
             <h2>About</h2>
             <p class="opening">A fast-learning, inquisitive and confident Engineering Graduate with a passion and aptitude for problem-solving and technology. Completed 12-week intensive Software Engineering Academy, gaining strong
             foundations in test-driven development of end-user software in full stack JavaScript.</p>
+            <br><br>
+            <h2>Interests</h2>
+            <ol id="interests" style="list-style: none">
+                <li id="interest-1" style="display:none">
+                    Cyber security
+                </li>
+                <li id="interest-2" style="display:none">
+                    JQuery
+                </li>
+                <li id="interest-3" style="display:none">
+                    Continuous learning
+                </li>
+            </ol>
+            <button id ="btn1">Click to fade in interests</button>
+            <br>
+            <button id="btn2" style="display:none">Bonus interest</button>
             <br>
         </section>
         <h4 id="projects" style="color:transparent;">Projects</h4>
